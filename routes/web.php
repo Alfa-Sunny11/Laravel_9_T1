@@ -13,22 +13,32 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/home', function () {
+Route::get('/', function () {
     return view('home');
-});
+})->name('home');
+
+Route::get('/member/student', function () {
+    return view('member.student');
+})->name('student');
+Route::get('/member/faculty', function () {
+    return view('member.faculty');
+})->name('faculty');
 
 Route::get('/about',function(){
     return view('about');
 });
+Route::get('/contact',function(){
+    return view('contact');
+});
 
 
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+// Route::get('/dashboard', function () {
+//     return view('dashboard');
+// })->middleware(['auth'])->name('dashboard');
 
-require __DIR__.'/auth.php';
+// require __DIR__.'/auth.php';
