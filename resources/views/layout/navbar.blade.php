@@ -6,29 +6,29 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="{{route('home')}}">Home</a>
-                  </li>
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{{route('home')}}">Home</a>
+                        </li>
 
-                  <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Member
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="{{route('student')}}">Student</a></li>
-                        <li><a class="dropdown-item" href="{{route('faculty')}}">Faculty</a></li>
-                  </ul>
-                  </li>
-                  <li class="nav-item">
-                  <a class="nav-link" href="{{url('/about')}}">About</a>
-                  </li>
-                  <li class="nav-item">
-                  <a class="nav-link" href="{{url('/contact')}}">Contact us</a>
-                  </li>
+                        <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Member
+                              </a>
+                              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="{{route('student')}}">Student</a></li>
+                                    <li><a class="dropdown-item" href="{{route('faculty')}}">Faculty</a></li>
+                              </ul>
+                        </li>
+                        <li class="nav-item">
+                              <a class="nav-link" href="{{route('about')}}">About</a>
+                        </li>
+                        <li class="nav-item">
+                              <a class="nav-link" href="{{route('contact')}}">Contact us</a>
+                        </li>
                   </ul>
                   <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
                   </form>
             </div>
             </div>
